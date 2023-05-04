@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b75bcb6c1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Password Generator</title>
+  </head>
+
+  <body>
+
+    <header>
+      <i class="fa-solid fa-bars"></i>
+      <div class="logo"><i class="fa-solid fa-user-astronaut"></i></div>
+      <button>Try For Free</button>
+    </header>
+
+    <div class="countainer">
+      <div class="password">
+        <input type="text" maxlength="30" />
+        <div class="icons">
+          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-regular fa-clipboard"></i>
+        </div>
+        <div class="password-strength">
+          <span class="stronger-progress"></span>
+        </div>
+      </div>
+
+      <div class="settings">
+        <h3>Customize your password</h3>
+
+        <div class="password-length">
+          <label for="">Password Length </label> <span>15</span>
+          <input
+            style="width: 100%"
+            class="range"
+            type="range"
+            value="15"
+            min="1"
+            max="20"
+            step="1"
+          />
+        </div>
+
+        <div class="password-settings">
+          <ul class="options">
+            <li class="option">
+              <input type="checkbox" name="" id="lowercase" checked />
+              <label for="">Lowercase</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" name="" id="uppercase" />
+              <label for="">Uppercase</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" name="" id="numbers" />
+              <label for="">Numbers</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" name="" id="symbols" />
+              <label for="">Symbols</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="generate">Generate Password</button>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
